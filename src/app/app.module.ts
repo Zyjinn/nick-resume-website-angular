@@ -4,10 +4,11 @@ import { NgModule } from '@angular/core';
 // Components
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [AppComponent, HomePageComponent],
-  imports: [BrowserModule],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })
