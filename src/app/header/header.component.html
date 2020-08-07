@@ -1,11 +1,20 @@
 <!-- Header (navbar)-->
-<div class="navbar is-dark">
-  <!-- Logo goes here! -->
-  <div class="navbar-brand">
+<div class="navbar">
+  <div class="navbar-start">
     <a class="navbar-item" routerLink="/homePage">
-      <img src="assets/img/angular-logo.png" alt="(My Logo) " />Home</a
-    >
+      <!-- Logo goes here! -->
+      <img src="src\assets\img\angular-logo.png" alt="(logo)" />
+    </a>
     <a class="navbar-item" routerLink="#">Contact Me</a>
     <a class="navbar-item" routerLink="#">Projects</a>
+    <!-- Navigation "burger" (list of extra pages) -->
+    <div
+      class="navbar-burger burger"
+      data-target="navbarExampleTransparentExample"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </div>
 </div>
