@@ -1,6 +1,9 @@
+// Modules
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
+// Components
+import { HomePageComponent } from './app/home-page/home-page.component';
 
 // Declare all routes (links)
 const routes: Routes = [
