@@ -1,5 +1,11 @@
 .hero {
-  background-image: url("/assets/Using_Laptop.jpg") !important;
+  background-image: url("src\assets\Using_Laptop.jpeg") !important;
   background-size: cover;
   background-position: bottom;
+  background-color: darkgreen;
+}
+.card-image {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
 }
