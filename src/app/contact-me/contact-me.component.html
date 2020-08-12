@@ -9,26 +9,65 @@
 <!-- Contact form -->
 <section class="section">
   <div class="container">
-    <form action="">
+    <form action="" (ngSubmit)="submitForm()" #contactForm="ngForm">
       <!-- Insert name -->
       <div class="field">
         <label class="label is-rounded">Your Name (First, Last)</label>
-        <input type="text" name="name" class="input is-rounded" />
+        <input
+          type="text"
+          name="name"
+          class="input is-rounded"
+          [(ngModel)]="name"
+          #nameInput="ngModel"
+          required
+        />
+        <!-- Put input into var name -->
+        <!-- Error if name not given -->
+        <div
+          class="help is-error"
+          *ngIf="nameInput.invalid && nameInput.touched"
+        >
+          Sorry, your name is required for submission!
+        </div>
+        <!-- Errors are objects! -->
+        <!-- {{ nameInput.errors | json }} -->
       </div>
+
       <!-- Insert email -->
       <div class="field">
         <label class="label is-rounded">Email Address</label>
-        <input type="email" name="email" class="input is-rounded" />
+        <input
+          type="email"
+          name="email"
+          class="input is-rounded"
+          [(ngModel)]="email"
+          #emailInput="ngModel"
+          required
+        />
+      </div>
+      <div
+        class="help is-error"
+        *ngIf="emailInput.invalid && emailInput.touched"
+      >
+        This is an invalid email
       </div>
 
       <!-- Insert message -->
       <div class="field">
         <label class="label">Message Body</label>
-        <textarea name="message" class="textarea"></textarea>
+        <textarea
+          name="message"
+          class="textarea"
+          [(ngModel)]="message"
+        ></textarea>
       </div>
 
       <!-- Submission button -->
-      <button type="submit" class="button is-primary is-pulled-right">
+      <button
+        type="submit"
+        class="button is-primary is-pulled-left"
+        [disabled]="contactForm.invalid"
+      >
         Submit
       </button>
     </form>
