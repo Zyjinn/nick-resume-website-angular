@@ -9,6 +9,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { HireMeComponent } from './hire-me/hire-me.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { ProjectsComponent } from './projects/projects.component';
     HomePageComponent,
     ContactMeComponent,
     ProjectsComponent,
+    HireMeComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, CoreModule],
   providers: [],
