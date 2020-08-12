@@ -4,6 +4,7 @@
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 />
 
+<!-- Title and link to github -->
 <div class="container">
   <div class="columns">
     <div class="column">
@@ -13,11 +14,21 @@
       <a href="https://github.com/Zyjinn" class="fa fa-github"></a>
     </div>
   </div>
+
   <!-- List of my bigger projects -->
-  <!-- TODO: make list of mock projects to link to -->
   <div class="title">My Projects</div>
   <!-- Loop through projects list -->
-  <div *ngFor="let project of projects">
-    <div class="subtitle">{{ project.name }}</div>
+  <div class="container">
+    <div *ngFor="let project of projects" class="columns">
+      <div class="subtitle column">
+        <!-- TODO: Link to the project as name  -->
+        {{ project.name }}
+      </div>
+      <div class="column">
+        <button class="button">
+          <a href="{{ project.url }}">Project on Github</a>
+        </button>
+      </div>
+    </div>
   </div>
 </div>
