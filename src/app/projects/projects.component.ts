@@ -10,7 +10,7 @@ import { PROJECTS } from '../mock-projects';
 export class ProjectsComponent implements OnInit {
   // Properties
   projects = PROJECTS;
-  selectedProject: Project;
+  // selectedProject: Project;
 
   constructor() {}
 
