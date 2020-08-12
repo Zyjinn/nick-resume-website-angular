@@ -16,5 +16,8 @@
   <!-- List of my bigger projects -->
   <!-- TODO: make list of mock projects to link to -->
   <div class="title">My Projects</div>
-  <div class="subtitle"><a routerLink="/homePage">This website!</a></div>
+  <!-- Loop through projects list -->
+  <div *ngFor="let project of projects">
+    <div class="subtitle">{{ project.name }}</div>
+  </div>
 </div>
