@@ -1,6 +1,7 @@
 // modules
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 // Components
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
@@ -11,8 +12,15 @@ import { ContactMeComponent } from './contact-me/contact-me.component';
 import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
-  declarations: [AppComponent, HomePageComponent, HeaderComponent, FooterComponent, ContactMeComponent, ProjectsComponent],
-  imports: [BrowserModule, AppRoutingModule],
+  declarations: [
+    AppComponent,
+    HomePageComponent,
+    HeaderComponent,
+    FooterComponent,
+    ContactMeComponent,
+    ProjectsComponent,
+  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
