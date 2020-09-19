@@ -1,0 +1,12 @@
+{
+  "hosting": {
+    "public": "dist/nick-resume-website-angular",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrite": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
