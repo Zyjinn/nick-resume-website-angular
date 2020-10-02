@@ -7,5 +7,5 @@ import { CoreModule } from './core/core.module';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'nick-resume-website-angular';
+  title = 'Nicholas Bourgeois, Personal Website!';
 }
