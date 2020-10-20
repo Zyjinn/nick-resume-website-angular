@@ -3,7 +3,7 @@
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 />
-<section class="hero is-medium is-bold is-success">
+<section class="hero is-medium is-bold is-success pb-5">
   <div class="hero-body-padding">
     <div class="container">
       <h1 class="title">List of Some More Notable Projects!</h1>
@@ -20,7 +20,7 @@
 </section>
 
 <!-- List of Projects (Pulled from fake database?) -->
-<div class="tile is-ancestor">
+<div class="tile is-ancestor pt-6">
   <div *ngFor="let project of projects" class="columns" class="tile is-parent">
     <article class="tile is-child box">
       <p class="title">{{ project.name }}</p>
