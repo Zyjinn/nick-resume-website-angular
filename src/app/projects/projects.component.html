@@ -3,40 +3,51 @@
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 />
-
-<!-- Title and link to github -->
-<div class="container">
-  <div class="columns">
-    <div class="column">
-      <div class="title">More available on my github!</div>
-    </div>
-    <div class="column">
-      <button class="button">
+<section class="hero is-medium is-bold is-success">
+  <div class="hero-body-padding">
+    <div class="container">
+      <h1 class="title">List of Some More Notable Projects!</h1>
+      <button class="button is-success">
         <span class="icon">
           <i href="https://github.com/Zyjinn" class="fa fa-github"></i>
         </span>
-        <span> My Github </span>
+        <span>
+          <h2 class="subtitle">Check out my Github for more!</h2>
+        </span>
       </button>
     </div>
   </div>
+</section>
 
-  <!-- List of my bigger projects -->
-  <div class="title">My Projects</div>
-  <!-- Loop through projects list -->
-  <div class="container">
-    <div *ngFor="let project of projects" class="columns">
-      <div class="subtitle column">
-        <!-- TODO: Link to the project as name  -->
-        {{ project.name }}
-      </div>
-      <div class="column">
-        <button class="button">
+<!-- List of Projects (Pulled from fake database?) -->
+<div class="tile is-ancestor">
+  <div *ngFor="let project of projects" class="columns" class="tile is-parent">
+    <article class="tile is-child box">
+      <p class="title">{{ project.name }}</p>
+      <div class="subtitle">
+        <button class="button is-success">
           <span class="icon">
             <i class="fa fa-github">
               <a href="{{ project.url }}"></a>
             </i>
           </span>
-          <span> Project on Github </span>
+          <span>Project on Github</span>
+        </button>
+      </div>
+    </article>
+  </div>
+  <!-- Title and link to github -->
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <div class="title">More available on my github!</div>
+      </div>
+      <div class="column">
+        <button class="button is-success">
+          <span class="icon">
+            <i href="https://github.com/Zyjinn" class="fa fa-github"></i>
+          </span>
+          <span>My Github</span>
         </button>
       </div>
     </div>
