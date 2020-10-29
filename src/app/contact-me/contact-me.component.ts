@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ConnectionService } from '../connection.service';
 
 @Component({
   selector: 'app-contact-me',

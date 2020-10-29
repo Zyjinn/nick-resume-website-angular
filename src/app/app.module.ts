@@ -10,6 +10,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { HireMeComponent } from './hire-me/hire-me.component';
+import { ConnectionService } from './connection.service';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,13 @@ import { HireMeComponent } from './hire-me/hire-me.component';
     ProjectsComponent,
     HireMeComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, CoreModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    CoreModule,
+    ConnectionService,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
