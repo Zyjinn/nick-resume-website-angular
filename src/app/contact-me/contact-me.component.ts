@@ -60,10 +60,6 @@ export class ContactMeComponent implements OnInit {
     );
   }
 
+  // Init function, not in use here
   ngOnInit(): void {}
-
-  submitForm(): void {
-    const formAlert = `Thank you ${this.name} for your submission! I should get back to you within 24 hours!`;
-    alert(formAlert);
-  }
 }
