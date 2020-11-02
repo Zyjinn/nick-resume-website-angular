@@ -11,31 +11,42 @@
   <div class="container">
     <form [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
       <!-- Insert email -->
-      <div class="form-group">
+      <div class="field">
         <label for="Email" class="label is-rounded">Email</label>
-        <input
-          type="email"
-          class="form-control input is-rounded"
-          name="Email"
-          aria-describedby="emailHelp"
-          placeholder="Enter your email!"
-          formControlName="Email"
-        />
+        <div class="control has-icons-left has-icons-right">
+          <input
+            type="email"
+            class="input is-rounded"
+            name="Email"
+            aria-describedby="emailHelp"
+            placeholder="Example@gmail.com"
+            formControlName="Email"
+          />
+          <span class="icon is-small is-left">
+            <i class="fa fa-envelope"></i>
+          </span>
+        </div>
       </div>
+
       <!-- Insert Name -->
-      <div class="form-group">
+      <div class="field">
         <label for="fullname" class="label is-rounded">Full Name</label>
-        <input
-          type="text"
-          class="form-control input is-rounded"
-          name="Fullname"
-          placeholder="Enter your full name"
-          formControlName="Fullname"
-        />
+        <div class="control has-icons-left has-icons-right">
+          <input
+            type="text"
+            class="form-control input is-rounded"
+            name="Fullname"
+            placeholder="Jake, Statefarm"
+            formControlName="Fullname"
+          />
+          <span class="icon is-small is-left">
+            <i class="fa fa-user"></i>
+          </span>
+        </div>
       </div>
 
       <!-- Insert message -->
-      <div class="form-group">
+      <div class="field">
         <label for="Comment" class="label is-rounded">Message</label>
         <textarea
           class="textarea"
