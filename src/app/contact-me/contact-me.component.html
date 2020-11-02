@@ -9,66 +9,46 @@
 <!-- Contact form -->
 <section class="section">
   <div class="container">
-    <form action="" (ngSubmit)="submitForm()" #contactForm="ngForm">
-      <!-- Insert name -->
-      <div class="field">
-        <label class="label is-rounded">Your Name (First, Last)</label>
-        <input
-          type="text"
-          name="name"
-          class="input is-rounded"
-          [(ngModel)]="name"
-          #nameInput="ngModel"
-          required
-        />
-        <!-- Put input into var name -->
-        <!-- Error if name not given -->
-        <div
-          class="help is-error"
-          *ngIf="nameInput.invalid && nameInput.touched"
-        >
-          Sorry, your name is required for submission!
-        </div>
-        <!-- Errors are objects! -->
-        <!-- {{ nameInput.errors | json }} -->
-      </div>
-
+    <form [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
       <!-- Insert email -->
-      <div class="field">
-        <label class="label is-rounded">Email Address</label>
+      <div class="form-group">
+        <label for="Email" class="label is-rounded">Email</label>
         <input
           type="email"
-          name="email"
-          class="input is-rounded"
-          [(ngModel)]="email"
-          #emailInput="ngModel"
-          required
+          class="form-control input is-rounded"
+          name="Email"
+          aria-describedby="emailHelp"
+          placeholder="Enter your email!"
+          formControlName="Email"
         />
+        <small id="emailHelp" class="form-text text-muted"
+          >Your email won't be shared with anyone else!</small
+        >
       </div>
-      <div
-        class="help is-error"
-        *ngIf="emailInput.invalid && emailInput.touched"
-      >
-        This is an invalid email
+      <!-- Insert Name -->
+      <div class="form-group">
+        <label for="fullname">Full Name</label>
+        <input
+          type="text"
+          class="form-control"
+          name="Fullname"
+          placeholder="Enter your full name"
+          formControlName="Fullname"
+        />
       </div>
 
       <!-- Insert message -->
-      <div class="field">
-        <label class="label">Message Body</label>
-        <textarea
-          name="message"
-          class="textarea"
-          [(ngModel)]="message"
-        ></textarea>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea class="form-control" formControlName="Message" name="Message">
+        </textarea>
       </div>
-
-      <!-- Submission button -->
       <button
         type="submit"
-        class="button is-primary is-pulled-left"
-        [disabled]="contactForm.invalid"
+        class="btn btn-primary"
+        [disabled]="!FormData.valid"
       >
-        Submit
+        Submit!
       </button>
     </form>
   </div>

@@ -25,8 +25,8 @@ export class ContactMeComponent implements OnInit {
     });
   }
 
-  submitForm(): void {
-    const formAlert = `Thank you ${this.name} for your submission! I should get back to you within 24 hours!`;
+  onSubmit(): void {
+    const formAlert = `Thank you for your submission! I should get back to you within 24 hours!`;
     alert(formAlert);
   }
 }
