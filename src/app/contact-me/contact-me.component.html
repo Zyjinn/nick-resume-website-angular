@@ -39,17 +39,11 @@
 
       <!-- Insert message -->
       <div class="form-group">
-        <label for="message">Message</label>
-        <textarea class="form-control" formControlName="Message" name="Message">
+        <label for="Comment">Message</label>
+        <textarea class="textarea" formControlName="Comment" name="Comment">
         </textarea>
       </div>
-      <button
-        type="submit"
-        class="btn btn-primary"
-        [disabled]="!FormData.valid"
-      >
-        Submit!
-      </button>
+      <button type="submit" class="btn btn-primary">Submit!</button>
     </form>
   </div>
 </section>

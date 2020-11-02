@@ -5,6 +5,7 @@ import {
   FormGroup,
   Validators,
 } from '@angular/forms';
+import { ContactService } from '../contact.service';
 @Component({
   selector: 'app-contact-me',
   templateUrl: './contact-me.component.html',
@@ -13,7 +14,7 @@ import {
 export class ContactMeComponent implements OnInit {
   FormData: FormGroup;
 
-  constructor(private builder: FormBuilder) {}
+  constructor(private builder: FormBuilder, private contact: ContactService) {}
 
   ngOnInit(): void {
     this.FormData = this.builder.group({
@@ -25,7 +26,18 @@ export class ContactMeComponent implements OnInit {
     });
   }
 
-  onSubmit(): void {
+  onSubmit(FormData): void {
+    console.log(FormData);
+    this.contact.PostMessage(FormData).subscribe(
+      (Response) => {
+        location.href = 'https://mailthis.to/confirm';
+        console.log(Response);
+      },
+      (error) => {
+        console.warn(error.responseText);
+        console.log({ error });
+      }
+    );
     const formAlert = `Thank you for your submission! I should get back to you within 24 hours!`;
     alert(formAlert);
   }

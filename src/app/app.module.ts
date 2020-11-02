@@ -11,6 +11,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { HireMeComponent } from './hire-me/hire-me.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ContactService } from './contact.service';
 
 @NgModule({
   declarations: [
@@ -26,8 +28,9 @@ import { HireMeComponent } from './hire-me/hire-me.component';
     FormsModule,
     CoreModule,
     ReactiveFormsModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [ContactService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
