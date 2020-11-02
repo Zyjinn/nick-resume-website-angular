@@ -8,7 +8,7 @@ import { HttpHeaders } from '@angular/common/http';
   providedIn: 'root',
 })
 export class ContactService {
-  private api = 'https://mailthis.to/xsaber64@gmail.com'; // replace with email?
+  private api = 'https://mailthis.to/Nick@NicholasBourgeois.me'; // replace with email?
   constructor(private http: HttpClient) {}
 
   // Send a message

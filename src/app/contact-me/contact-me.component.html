@@ -1,4 +1,4 @@
-<section class="hero is-primary is-bold">
+<section class="hero is-success is-bold">
   <div class="hero-body">
     <div class="container">
       <h1 class="title">Contact Me!</h1>
@@ -21,16 +21,13 @@
           placeholder="Enter your email!"
           formControlName="Email"
         />
-        <small id="emailHelp" class="form-text text-muted"
-          >Your email won't be shared with anyone else!</small
-        >
       </div>
       <!-- Insert Name -->
       <div class="form-group">
-        <label for="fullname">Full Name</label>
+        <label for="fullname" class="label is-rounded">Full Name</label>
         <input
           type="text"
-          class="form-control"
+          class="form-control input is-rounded"
           name="Fullname"
           placeholder="Enter your full name"
           formControlName="Fullname"
@@ -39,11 +36,18 @@
 
       <!-- Insert message -->
       <div class="form-group">
-        <label for="Comment">Message</label>
-        <textarea class="textarea" formControlName="Comment" name="Comment">
+        <label for="Comment" class="label is-rounded">Message</label>
+        <textarea
+          class="textarea"
+          placeholder="Enter a message to send!"
+          formControlName="Comment"
+          name="Comment"
+        >
         </textarea>
       </div>
-      <button type="submit" class="btn btn-primary">Submit!</button>
+      <button type="submit" class="button is-success is-rounded mt-3">
+        Submit!
+      </button>
     </form>
   </div>
 </section>
