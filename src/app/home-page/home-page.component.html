@@ -16,15 +16,49 @@
   <div class="tile is-vertical is-6">
     <div class="tile">
       <div class="tile is-parent is-vertical">
-        <!-- TILE, Vertical -->
+        <!-- Title tile -->
         <article
           class="tile is-child message is-large notification is-dark is-success"
         >
-          <p class="title message-header">Nicholas Bourgeois</p>
+          <div class="title message-header">
+            <p>Nicholas Bourgeois</p>
 
-          <p class="subtitle message-header">Software Developer</p>
+            <p class="subtitle">Software Developer/Web Developer</p>
+          </div>
+
+          <!-- About me -->
+          <p class="message-header">Hey! I'm Nicholas Bourgeois!</p>
           <div class="message-body">
-            Hey! I'm Nicholas Bourgeois! And I like to code!
+            <p><strong></strong></p>
+            <p>I'm a graduating Computer Science in Louisiana</p>
+            <p>
+              I like playing music(Piano and Trumpet), dogs, the color green,
+              tea, the program Notion and oh, coding!
+            </p>
+          </div>
+
+          <!-- Want to hire me? -->
+          <p class="message-header">Want to hire me?</p>
+          <div class="message-body">
+            <p>
+              I am currently looking for software development or web development
+              jobs!
+            </p>
+          </div>
+          <!-- Contact, hire and projects button links -->
+          <div class="buttons">
+            <!-- Contact form button -->
+            <button class="button is-rounded is-primary">
+              <a [routerLink]="['/contactMe']">Contact Me</a>
+            </button>
+            <!-- Hire me button -->
+            <button class="button is-rounded is-success">
+              <a [routerLink]="['/contactMe']">Skills</a>
+            </button>
+            <!-- Projects button -->
+            <button class="button is-rounded is-link">
+              <a [routerLink]="['/contactMe']">My Projects</a>
+            </button>
           </div>
         </article>
       </div>
