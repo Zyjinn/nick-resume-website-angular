@@ -4,7 +4,11 @@
   width: 150px;
   text-align: center;
   text-decoration: none;
+  text-decoration: none;
 }
 .fa:hover {
   opacity: 0.7;
+}
+.ui-button-text {
+  text-decoration: none;
 }

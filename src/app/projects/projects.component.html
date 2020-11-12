@@ -11,29 +11,35 @@
       <h1 class="title">List of Some More Notable Projects!</h1>
       <button class="button is-dark">
         <span class="icon">
-          <i href="https://github.com/Zyjinn" class="fa fa-github"></i>
+          <i class="fa fa-github"></i>
         </span>
         <span>
-          <h2 class="subtitle">Check out my Github for more!</h2>
+          <h2 class="subtitle">
+            <a href="https://github.com/Zyjinn"
+              >Check out my Github for more!</a
+            >
+          </h2>
         </span>
       </button>
     </div>
   </div>
 </section>
 
-<!-- List of Projects (Pulled from fake database?) -->
+<!-- ! List of Projects  -->
 <div class="tile is-ancestor pt-6 pb-6">
   <div *ngFor="let project of projects" class="columns" class="tile is-parent">
     <article class="tile is-child box">
       <p class="title">{{ project.name }}</p>
       <div class="subtitle">
-        <button class="button is-dark">
+        <button class="button">
           <span class="icon">
-            <i class="fa fa-github">
-              <a href="{{ project.url }}"></a>
-            </i>
+            <i class="fa fa-github"> </i>
           </span>
-          <span>Project on Github</span>
+          <span>
+            <h2 class="subtitle">
+              <a href="{{ project.url }}">Project on Github</a>
+            </h2>
+          </span>
         </button>
       </div>
     </article>

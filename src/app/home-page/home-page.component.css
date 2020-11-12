@@ -9,3 +9,6 @@
   height: fit-content;
   position: relative;
 }
+.ui-button-text {
+  text-decoration: none;
+}
