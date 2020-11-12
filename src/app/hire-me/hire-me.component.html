@@ -1,61 +1,41 @@
 <!-- Hire me section -->
-<section class="section">
-  <!-- Download my resume -->
-  <div class="container">
-    <div class="columns">
-      <div class="column">
-        <div class="title">
-          Need a PDF of my resume?
-        </div>
-      </div>
-      <div class="column">
-        <div class="title">
-          <button class="button is-rounded">
-            <a
-              src="https://drive.google.com/file/d/1q6_AFOGOQ8VC4AtmkgDsHTreIN2t3eXn/view?usp=sharing"
-              >Download my resume!</a
-            >
-          </button>
-        </div>
-      </div>
+<section class="section is-center pl-6 pr-6">
+  <div class="columns">
+    <!-- Table of skills? -->
+    <div class="column">
+      <table class="table">
+        <thead class="title">
+          Skills
+        </thead>
+        <tbody>
+          <tr>
+            <th>Skill</th>
+            <th>Experience</th>
+          </tr>
+          <tr *ngFor="let skill of skills">
+            <td>
+              {{ skill.skill }}
+            </td>
+            <td>
+              {{ skill.experience }}
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-  </div>
-  <!-- Hire me contact linking -->
-  <div class="container">
-    <div class="columns">
-      <div class="column">
-        <h1 class="title">Want to hire me?</h1>
-      </div>
-      <div class="column">
-        <button class="button is-rounded" routerLink="/contact-me">
-          Contact me!
-        </button>
-      </div>
-    </div>
-  </div>
+    <!-- Hire me contact linking -->
 
-  <!-- Table of skills? -->
-  <div class="container">
-    <table class="table">
-      <thead class="title">
-        Skills
-      </thead>
-      <tbody>
-        <tr>
-          <th>
-            Skill
-          </th>
-          <th>Experience</th>
-        </tr>
-        <tr *ngFor="let skill of skills">
-          <td>
-            {{ skill.skill }}
-          </td>
-          <td>
-            {{ skill.experience }}
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="column">
+      <button class="button is-rounded" routerLink="/contact-me">
+        <a href="https://nicholasbourgeois.me/contactMe">Contact Me!</a>
+      </button>
+      <!-- ! My Resume link -->
+      <button class="button is-rounded">
+        <a
+          href="https://drive.google.com/file/d/1SbVV8FiGr7mIG7IVbL3Unos2sU4_Yk-M/view?usp=sharing"
+          >Download my resume!</a
+        >
+      </button>
+    </div>
   </div>
 </section>
