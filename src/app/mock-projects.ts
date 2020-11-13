@@ -16,4 +16,14 @@ export const PROJECTS: Project[] = [
     language: 'HTML, CSS, PHP and mySQlite',
     url: 'https://github.com/Zyjinn/CMPS-460-DBProject',
   },
+  {
+    name: 'Java Chat Application',
+    language: 'Java',
+    url: 'https://github.com/Zyjinn/Final_Project_CMPS413',
+  },
+  {
+    name: 'Android Speedrunning Application - Loggers',
+    language: 'Kotlin',
+    url: 'https://github.com/Zyjinn/CMPS359_Logger_Final_Project',
+  },
 ];
