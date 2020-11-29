@@ -4,9 +4,9 @@
     <!-- Homepage Main hero -->
     <div class="container has-text-centered">
       <!-- Title -->
-      <h1 class="title">Nicholas Bourgeois</h1>
+      <h1 class="title notification is-light is-primary">Nicholas Bourgeois</h1>
       <!-- Subtitle -->
-      <h2 class="subtitle">Software Developer</h2>
+      <h2 class="subtitle notification is-warning">Software Developer</h2>
     </div>
   </div>
 </section>
@@ -44,27 +44,37 @@
             </p>
           </div>
           <!-- Contact, hire and projects button links -->
-          <div class="buttons">
-            <!-- Contact form button -->
-            <button class="button is-rounded is-primary">
-              <a [routerLink]="['/contactMe']">Contact Me</a>
-            </button>
-            <div class="container pb-6">
-              <a class="button" href="https://github.com/Zyjinn">
-                <span class="icon"> <i class="fa fa-github"></i> </span>
-                <span>Check out of Github for More!</span></a
+          <!-- Contact Me button -->
+          <div class="field is-grouped">
+            <div class="container">
+              <a
+                class="button is-rounded is-primary"
+                [routerLink]="['/contactMe']"
+              >
+                <span class="icon"> <i class="fa fa-address-book"></i> </span>
+                <span>Contact Me</span></a
               >
             </div>
             <!-- Hire me button -->
-            <button class="button is-rounded is-info">
-              <a [routerLink]="['/contactMe']">Skills</a>
-            </button>
-            <!-- Projects button -->
-            <button class="button is-rounded is-link">
-              <a class="ui-button-text" [routerLink]="['/contactMe']"
-                >My Projects</a
+            <div class="container">
+              <a
+                class="button is-rounded is-warning"
+                [routerLink]="['/contactMe']"
               >
-            </button>
+                <span class="icon"> <i class="fa fa-suitcase"></i> </span>
+                <span>Hire Me</span></a
+              >
+            </div>
+            <!-- Projects button -->
+            <div class="container">
+              <a
+                class="button is-rounded is-link"
+                [routerLink]="['/contactMe']"
+              >
+                <span class="icon"> <i class="fa fa-code-fork"></i> </span>
+                <span>My Projects</span></a
+              >
+            </div>
           </div>
         </article>
       </div>
@@ -72,9 +82,9 @@
   </div>
 
   <!-- IMAGE TILE -->
-  <div class="tile is-parent">
+  <div class="tile is-parent is-primary">
     <article class="tile is-child notification is-primary is-8">
-      <div class="content">
+      <div class="content is-primary">
         <figure class="image">
           <img
             src="assets/Professional_Headshot.jpg"
@@ -83,6 +93,7 @@
             height="200"
           />
         </figure>
+        <p class="title message-header is-primary">Nicholas Bourgeois</p>
       </div>
     </article>
   </div>

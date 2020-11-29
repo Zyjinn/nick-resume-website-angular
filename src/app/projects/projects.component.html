@@ -11,30 +11,21 @@
       <h1 class="title">My Projects</h1>
     </div>
   </div>
-  <!-- Projects Button -->
-  <div class="container pb-6">
-    <a class="button" href="https://github.com/Zyjinn">
-      <span class="icon"> <i class="fa fa-github"></i> </span>
-      <span>Check out of Github for More!</span></a
-    >
-  </div>
 </section>
 
 <!-- ! List of Projects  -->
 <div class="tile is-ancestor pt-6 pb-6 is-primary">
-  <div
-    *ngFor="let project of projects"
-    class="columns"
-    class="tile is-parent is-primary"
-  >
+  <div *ngFor="let project of projects" class="tile is-parent">
     <article class="tile is-child box is-primary">
       <!-- Project title -->
       <p class="title mb-6">{{ project.name }}</p>
-      <div class="subtitle is-center">
+      <div class="subtitle">
         <!-- Button for link to project -->
         <div class="container pb-6">
           <a class="button" href="{{ project.url }}">
-            <span class="icon"> <i class="fa fa-github"></i> </span>
+            <span class="icon has-text-warning">
+              <i class="fa fa-github"></i>
+            </span>
             <span>{{ project.name }} on Github</span></a
           >
         </div>

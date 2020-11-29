@@ -9,13 +9,14 @@ $newWhite: #fdf8f5;
 $newSecondary: #4d774e;
 $newTertiary: #9dc88d;
 $blueish: #b5d0eb;
+$newWarning: #f1824a;
 
 // Set Bulma colors
 $primary: $newPrimary;
 $link: $newSecondary;
 $info: $newTertiary;
 $success: $newWhite;
-// $warning: $warning;
+$warning: $newWarning;
 // $danger: $orange;
 
 // Add a serif family
