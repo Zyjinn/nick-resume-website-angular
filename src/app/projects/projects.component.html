@@ -4,43 +4,40 @@
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 />
 
-<!-- Title and link to github account -->
-<section class="hero is-medium is-bold is-primary pb-5">
-  <div class="hero-body-padding">
+<!-- TItle and link to github -->
+<section class="hero is-primary is-bold">
+  <div class="hero-body">
     <div class="container">
-      <h1 class="title">List of Some More Notable Projects!</h1>
-      <button class="button">
-        <span class="icon">
-          <i class="fa fa-github"></i>
-        </span>
-        <span>
-          <h2 class="subtitle">
-            <a href="https://github.com/Zyjinn"
-              >Check out my Github for more!</a
-            >
-          </h2>
-        </span>
-      </button>
+      <h1 class="title">My Projects</h1>
     </div>
+  </div>
+  <!-- Projects Button -->
+  <div class="container pb-6">
+    <a class="button" href="https://github.com/Zyjinn">
+      <span class="icon"> <i class="fa fa-github"></i> </span>
+      <span>Check out of Github for More!</span></a
+    >
   </div>
 </section>
 
 <!-- ! List of Projects  -->
-<div class="tile is-ancestor pt-6 pb-6">
-  <div *ngFor="let project of projects" class="columns" class="tile is-parent">
-    <article class="tile is-child box">
-      <p class="title">{{ project.name }}</p>
-      <div class="subtitle">
-        <button class="button">
-          <span class="icon">
-            <i class="fa fa-github"> </i>
-          </span>
-          <span>
-            <h2 class="subtitle">
-              <a href="{{ project.url }}">Project on Github</a>
-            </h2>
-          </span>
-        </button>
+<div class="tile is-ancestor pt-6 pb-6 is-primary">
+  <div
+    *ngFor="let project of projects"
+    class="columns"
+    class="tile is-parent is-primary"
+  >
+    <article class="tile is-child box is-primary">
+      <!-- Project title -->
+      <p class="title mb-6">{{ project.name }}</p>
+      <div class="subtitle is-center">
+        <!-- Button for link to project -->
+        <div class="container pb-6">
+          <a class="button" href="{{ project.url }}">
+            <span class="icon"> <i class="fa fa-github"></i> </span>
+            <span>{{ project.name }} on Github</span></a
+          >
+        </div>
       </div>
     </article>
   </div>
