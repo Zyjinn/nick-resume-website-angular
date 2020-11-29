@@ -1,31 +1,25 @@
 <!-- Hero section to create background for homepage-->
-<section class="hero is-success is-bold is-fullheight-with-navbar">
+<section class="hero is-primary is-bold is-large">
   <div class="hero-body">
     <!-- Homepage Main hero -->
     <div class="container has-text-centered">
       <!-- Title -->
-      <h1 class="title">Nicholas Bourgeois</h1>
+      <h1 class="title notification is-primary">Nicholas Bourgeois</h1>
       <!-- Subtitle -->
-      <h2 class="subtitle">Software Developer</h2>
+      <h2 class="subtitle notification is-info">
+        Software Developer and Web Developer
+      </h2>
     </div>
   </div>
 </section>
 
 <!-- About me text -->
-<div class="tile is-ancestor">
+<div class="tile is-ancestor is-primary">
   <div class="tile is-vertical is-6">
     <div class="tile">
       <div class="tile is-parent is-vertical">
         <!-- Title tile -->
-        <article
-          class="tile is-child message is-large notification is-dark is-success"
-        >
-          <div class="title message-header">
-            <p>Nicholas Bourgeois</p>
-
-            <p class="subtitle">Software Developer/Web Developer</p>
-          </div>
-
+        <article class="tile is-child message is-large notification is-primary">
           <!-- About me -->
           <p class="message-header">Hey! I'm Nicholas Bourgeois!</p>
           <div class="message-body">
@@ -46,21 +40,37 @@
             </p>
           </div>
           <!-- Contact, hire and projects button links -->
-          <div class="buttons">
-            <!-- Contact form button -->
-            <button class="button is-rounded is-primary">
-              <a [routerLink]="['/contactMe']">Contact Me</a>
-            </button>
-            <!-- Hire me button -->
-            <button class="button is-rounded is-success">
-              <a [routerLink]="['/hireMe']">Skills</a>
-            </button>
-            <!-- Projects button -->
-            <button class="button is-rounded is-link">
-              <a class="ui-button-text" [routerLink]="['/Projects']"
-                >My Projects</a
+          <!-- Contact Me button -->
+          <div class="field is-grouped">
+            <div class="container">
+              <a
+                class="button is-rounded is-primary"
+                [routerLink]="['/contactMe']"
               >
-            </button>
+                <span class="icon"> <i class="fa fa-address-book"></i> </span>
+                <span>Contact Me</span></a
+              >
+            </div>
+            <!-- Hire me button -->
+            <div class="container">
+              <a
+                class="button is-rounded is-warning"
+                [routerLink]="['/contactMe']"
+              >
+                <span class="icon"> <i class="fa fa-suitcase"></i> </span>
+                <span>Hire Me</span></a
+              >
+            </div>
+            <!-- Projects button -->
+            <div class="container">
+              <a
+                class="button is-rounded is-link"
+                [routerLink]="['/contactMe']"
+              >
+                <span class="icon"> <i class="fa fa-code-fork"></i> </span>
+                <span>My Projects</span></a
+              >
+            </div>
           </div>
         </article>
       </div>
@@ -68,16 +78,11 @@
   </div>
 
   <!-- IMAGE TILE -->
-  <div class="tile is-parent">
-    <article class="tile is-child notification is-success is-8">
-      <div class="content">
+  <div class="tile is-parent is-primary">
+    <article class="tile is-child notification is-primary is-10">
+      <div class="content is-primary">
         <figure class="image">
-          <img
-            src="assets/Professional_Headshot.jpg"
-            alt="My Face"
-            width="200"
-            height="200"
-          />
+          <img src="assets/Professional_Headshot.jpg" alt="My Face" />
         </figure>
       </div>
     </article>

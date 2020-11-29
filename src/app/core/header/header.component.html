@@ -1,29 +1,100 @@
 <!-- Header (navbar)-->
-<div class="navbar">
-  <div class="navbar-start">
-    <!-- Goto homepage -->
-    <a class="navbar-item" routerLink="/homePage">
-      <!-- Logo goes here! -->
-      <img src="assets/Website_logo.jpg" alt="" />
-    </a>
+<div
+  class="navbar is-primary is-bold"
+  role="navigation"
+  aria-label="main navigation"
+>
+  <!-- * Logo and homepage nav -->
+  <div class="navbar-brand">
+    <a class="navbar-item" routerLink="/">
+      <img src="assets/Website_logo.jpg" alt="Website logo"
+    /></a>
 
-    <!-- Goto contact page -->
-    <a class="navbar-item" routerLink="/contactMe">Contact Me</a>
-
-    <!-- Goto Hire-me -->
-    <a class="navbar-item" routerLink="/hireMe">Hire Me!</a>
-
-    <!-- Goto Projects page -->
-    <a class="navbar-item" routerLink="/Projects">Projects</a>
-
-    <!-- Navigation "burger" (list of extra pages) -->
-    <div
+    <a
+      role="button"
       class="navbar-burger burger"
-      data-target="navbarExampleTransparentExample"
+      aria-label="menu"
+      aria-expanded="false"
+      data-target="navbarBasicExample"
     >
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start">
+      <!-- Goto contact page -->
+      <a class="navbar-item" routerLink="/contactMe">Contact Me</a>
+
+      <!-- Goto Hire-me -->
+      <a class="navbar-item" routerLink="/hireMe">Hire Me</a>
+
+      <!-- Goto Projects page -->
+      <a class="navbar-item" routerLink="/Projects">Projects</a>
+
+      <!-- Navigation "burger" (list of extra pages) -->
+      <div
+        class="navbar-burger burger"
+        data-target="navbarExampleTransparentExample"
+      ></div>
+
       <span></span>
       <span></span>
       <span></span>
+    </div>
+  </div>
+  <div class="navbar-end">
+    <!-- Github link -->
+    <div class="navbar-item">
+      <a
+        class="button is-rounded is-small is-outlined is-inverted is-dark"
+        href="https://github.com/Zyjinn"
+      >
+        <span class="icon"> <i class="fa fa-github"></i> </span
+      ></a>
+    </div>
+
+    <!-- Linkedin link navbar -->
+    <div class="navbar-item">
+      <a
+        class="button is-rounded is-small is-outlined is-inverted is-dark"
+        href="https://www.linkedin.com/in/nicholas-bourgeois-53b627180/"
+      >
+        <span class="icon"> <i class="fa fa-linkedin"></i> </span
+      ></a>
+    </div>
+
+    <!-- Navbar facebook link -->
+    <div class="navbar-item">
+      <a
+        class="button is-rounded is-small is-outlined is-inverted is-dark"
+        href="https://www.facebook.com/nicholas.bourgeois.7"
+      >
+        <span class="icon"> <i class="fa fa-facebook"></i> </span
+      ></a>
+    </div>
+
+    <!-- instagram navbar link -->
+    <div class="navbar-item">
+      <a
+        class="button is-rounded is-small is-outlined is-inverted is-dark"
+        href="https://www.instagram.com/silentnick/"
+      >
+        <span class="icon"> <i class="fa fa-instagram"></i> </span
+      ></a>
+    </div>
+
+    <!-- * Twitter navbar -->
+    <div class="navbar-item">
+      <a
+        class="button is-rounded is-small is-outlined is-inverted is-dark"
+        href="https://twitter.com/NickBourgeoisie"
+      >
+        <span class="icon">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+        </span>
+      </a>
     </div>
   </div>
 </div>
