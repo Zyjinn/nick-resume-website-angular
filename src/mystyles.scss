@@ -11,13 +11,16 @@ $pink-invert: #fff;
 // Add a serif family
 $family-serif: "Merriweather", "Georgia", serif;
 
+$teal: #489c9c;
+$blueish: #b5d0eb;
+
 // Set Bulma colors
-$primary: $green;
-$link: $blue;
-$info: $blue;
-$success: $green;
-$warning: $red;
-$danger: $orange;
+$primary: $teal;
+$link: $blueish;
+$info: $blueish;
+// $success: $success;
+// // $warning: $warning;
+// $danger: $orange;
 
 // Use the new serif family
 $family-primary: $family-serif;
