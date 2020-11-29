@@ -3,24 +3,23 @@
 @import "../node_modules/bulma/sass/utilities/functions.sass";
 
 // 2. Set your own initial variables
-// Update blue
-$blue: #72d0eb;
-// Add pink and its invert
-$pink: #ffb3b3;
-$pink-invert: #fff;
-// Add a serif family
-$family-serif: "Merriweather", "Georgia", serif;
 
-$teal: #489c9c;
+$newPrimary: #266150;
+$newWhite: #fdf8f5;
+$newSecondary: #4d774e;
+$newTertiary: #9dc88d;
 $blueish: #b5d0eb;
 
 // Set Bulma colors
-$primary: $teal;
-$link: $blueish;
-$info: $blueish;
-// $success: $success;
-// // $warning: $warning;
+$primary: $newPrimary;
+$link: $newSecondary;
+$info: $newTertiary;
+$success: $newWhite;
+// $warning: $warning;
 // $danger: $orange;
+
+// Add a serif family
+$family-serif: "Merriweather", "Georgia", serif;
 
 // Use the new serif family
 $family-primary: $family-serif;
