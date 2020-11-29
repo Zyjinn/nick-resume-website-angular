@@ -1,49 +1,58 @@
-<!-- ! Hire me header -->
+<!-- * Hire me header -->
 <section class="hero is-primary is-bold">
   <div class="hero-body">
-    <div class="container">
-      <h1 class="title">Want to Hire Me?</h1>
+    <div class="columns">
+      <!-- ! Header text -->
+      <div class="column">
+        <h1 class="title container">Want to Hire Me?</h1>
+      </div>
+
+      <!-- ! Empty column for spacing -->
+      <div class="column"></div>
+
+      <!-- ! My Resume link -->
+      <div class="column">
+        <!-- Resume download button -->
+        <a
+          class="button is-rounded is-link"
+          href="https://drive.google.com/file/d/1SbVV8FiGr7mIG7IVbL3Unos2sU4_Yk-M/view?usp=sharing"
+        >
+          <span class="icon"> <i class="fa fa-download"></i> </span>
+          <span>Download My Resume</span></a
+        >
+      </div>
+      <!-- * Link to contact page -->
+      <div class="column">
+        <!-- Contact me page link -->
+        <a class="button is-rounded is-link" [routerLink]="['/contactMe']">
+          <span class="icon"> <i class="fa fa-address-card"></i></span>
+          <span>Contact Me</span>
+        </a>
+      </div>
     </div>
   </div>
 </section>
-<!-- Hire me section -->
-<section class="section is-center pl-6 pr-6">
-  <div class="columns">
-    <!-- ! Table of skills -->
-    <div class="column">
-      <table class="table">
-        <thead class="title">
-          Skills
-        </thead>
-        <tbody>
-          <tr>
-            <th>Skill</th>
-            <th>Experience</th>
-          </tr>
-          <tr *ngFor="let skill of skills">
-            <td>
-              {{ skill.skill }}
-            </td>
-            <td>
-              {{ skill.experience }}
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
 
-    <!-- ! Contact me page link -->
-    <div class="column">
-      <button class="button is-rounded">
-        <a [routerLink]="['/contactMe']">Contact Me!</a>
-      </button>
-      <!-- ! My Resume link -->
-      <button class="button is-rounded">
-        <a
-          href="https://drive.google.com/file/d/1SbVV8FiGr7mIG7IVbL3Unos2sU4_Yk-M/view?usp=sharing"
-          >Download my resume!</a
-        >
-      </button>
-    </div>
-  </div>
+<!-- * Hire me section -->
+<section class="container pt-5 pr-5 mr-5">
+  <!-- ! Table of skills -->
+  <table class="table">
+    <thead class="title">
+      Skills
+    </thead>
+    <tbody>
+      <tr>
+        <th>Skill</th>
+        <th>Experience</th>
+      </tr>
+      <tr *ngFor="let skill of skills">
+        <td>
+          {{ skill.skill }}
+        </td>
+        <td>
+          {{ skill.experience }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </section>
