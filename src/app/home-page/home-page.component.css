@@ -1,5 +1,5 @@
 .hero {
-  background-image: url("src\assets\BigPlant_Laptop.jpg") !important;
+  background-image: url("src\assets\BigPlant_Laptop.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 70% 35%;
